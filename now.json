@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/auth.js",
+      "use": "@now/node"
+    }
+  ],
+  "files": ["api/auth.js", "./package.json"],
+  "routes": [
+    {
+      "src": "/auth",
+      "dest": "/api/auth.js"
+    }
+  ]
+}
